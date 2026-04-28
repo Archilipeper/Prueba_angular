@@ -7,7 +7,7 @@ export class DibujosComponent {
     public imagen: string = "";
     public numFallas = input<number>(0);
     
-    public mostrarDibujo(numFallas: number): void {
+    public mostrarDibujo(numFallas: number): string {
         if (numFallas === 0) {
             this.imagen = "";
         } else if (numFallas === 1) {
@@ -25,5 +25,6 @@ export class DibujosComponent {
         } else if (numFallas === 7) {
             this.imagen = "/Users/gagair/Prueba_angular/prueba_ahorcado/src/Dibujos Ahorcado/Dibujos Ahorcado 7.png";
         }
+        return this.imagen;
     }
 }
